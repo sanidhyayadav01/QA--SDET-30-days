@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/sanidhyayadav01/QA----SDET-30-days-.git'
+                git 'https://github.com/sanidhyayadav01/QA--SDET-30-days.git'
             }
         }
 
