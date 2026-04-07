@@ -1,0 +1,29 @@
+{
+  "name": "cypress-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "first.cy.js",
+  "scripts": {
+    "pretest:allure": "rimraf allure-results allure-report",
+    "test:allure": "cypress run --spec \"cypress/e2e/**/*.feature\"",
+    "posttest:allure": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.38.1",
+    "cypress": "^15.12.0",
+    "esbuild": "^0.28.0",
+    "rimraf": "^6.1.3"
+  },
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.4",
+    "cypress-file-upload": "^5.0.8"
+  }
+}
